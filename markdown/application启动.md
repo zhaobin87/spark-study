@@ -17,7 +17,7 @@ __配置:__
 `spark.fileserver.port`=`0`  
 `spark.unsafe.offHeap`=`false` #true=MemoryAllocator.UNSAFE || false =MemoryAllocator.HEAP  
 `spark.ui.enabled`=`true`  
-`spark.executor.memory>SPARK_EXECUTOR_MEMORY>SPARK_MEM`=`1024`
+`spark.executor.memory>SPARK_EXECUTOR_MEMORY>SPARK_MEM`=`1024`  
 `spark.dynamicAllocation.enabled`=`false` && `spark.executor.instances`=`0` == `0`  #dynamicAllocationEnabled  根据这两个参数来判断是否启动动态分配策略,默认是关闭的
 ##SparkContext:
 ####1. 初始化过程:
