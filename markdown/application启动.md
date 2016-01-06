@@ -33,7 +33,7 @@
 2.通过配置`spark.driver.allowMultipleContexts`=`true`允许在一个jvm启动多个sparkcontext而不抛出异常,仅仅是报出warn日志,但是正常情况下一个jvm里只允许一个sparkconstext存在的,可以看一下注释:  
 	
 	Called at the beginning of the SparkContext constructor to ensure that no SparkContext is running.  Throws an exception if a running context is detected and logs a warning if another thread is constructing a SparkContext.  This warning is necessary because the current locking scheme prevents us from reliably distinguishing between cases where another context is being constructed and cases where another constructor threw an exception.  
-3.参数sparkConfig被深度复制到私有变量的_conf中 
+3.参数sparkConfig被深度复制到私有变量的_conf中   
 4.无条件创建`listenerBus=new LiveListenerBus`   
 5.无条件创建JobProgressListener
 	
